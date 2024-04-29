@@ -1,0 +1,163 @@
+@import "../../utils/placeholders";
+
+@media (min-width:375px) {
+    .hero{
+        padding: 25px 20px 180px 20px;
+        background-color: $cream-shade;
+        margin-bottom: -60px;
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        &__mobile-image{
+            content: url('../../../images/main-images/hero-logo-mobile.png');
+        }
+
+
+        &__desktop-image{
+            display: none;
+        }
+    
+        &__header-paragraph-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px
+        }
+    
+        &__paragraph{
+            font-size: $mobile__hero-paragraph-font-size;
+            font-weight: $mobile__hero-paragraph-font-weight;
+            font-family: $main-font;
+            color: $yellow-shade;
+            text-transform: uppercase;
+        }
+    
+        &__header{
+            font-size: $mobile__hero-header-font-size;
+            font-weight: $mobile__hero-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+        }
+    
+        &__checkbox-list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+    
+        &__checkbox-item{
+            border-radius: $mobile__checkbox-card-border-radius;
+            padding: $mobile__checkbox-card-padding;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    
+        &__check-circle{
+            content: url('../../../images/main-images/check_circle.png');
+            width: 21px;
+            height: 21px;
+        }
+    
+        &__checkbox-paragraph{
+            color: $black-shade;
+            font-family: $main-font;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    
+        &__button{
+            border-radius: $mobile__button-border-radius;
+            padding: $mobile__button-padding;
+            background-color: $yellow-shade;
+            border: 0px;
+            cursor: pointer;
+        }
+    
+        &__button-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &__button-paragraph{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        &__button-image{
+            content: url('../../../images/main-images/right-key.png');
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (min-width:1400px) {
+    .hero{
+        padding: 80px 150px 330px 150px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -200px;
+
+        &__container{
+            flex-direction: column;
+            gap: 0px;
+           justify-content: space-between;
+        }
+
+        &__mobile-image{
+            display: none;
+        }
+
+        &__header-paragraph-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+
+        &__paragraph{
+            font-size: $desktop__hero-paragraph-font-size;
+            font-weight: $desktop__hero-paragraph-font-weight;
+            font-family: $main-font;
+            column-rule: $yellow-shade;
+        }
+
+        &__header{
+            font-size: $desktop__hero-header-font-size;
+            font-weight: $desktop__hero-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+        }
+
+        &__button{
+            align-self: flex-start;
+        }
+
+        &__checkbox-list{
+            margin-bottom: 0px;
+        }
+
+        &__button-container{
+            gap: 90px;
+        }
+
+        &__desktop-image{
+            display: inline;
+            content: url('../../../images/main-images/hero-image-desktop.png');
+            width: 650px;
+            height: 650px;
+        }
+    }
+
+}

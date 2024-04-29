@@ -1,0 +1,80 @@
+@import "../../utils/variables/colors";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width:375px) {
+    .header{
+        padding: 25px 20px 25px 20px;
+        background-color:$cream-shade;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__clock{
+            content: url('../../../images/header-images/clock-and-other.png');
+            margin-bottom: 10px;
+        }
+
+        &__container{
+            display: flex;
+            padding: 15px 25px;
+            background-color: $white-shade;
+            justify-content: space-between;
+            border-radius: 3750px;
+            align-items: center;
+        }
+
+        &__logo{
+            content: url('../../../images/header-images/header-paint-logo.png');
+            width: 95px;
+            height: 47px;
+            cursor: pointer;
+        }
+
+        &__embed-container{
+            display: flex;
+            gap: 10px;
+        }
+
+        &__flag{
+            content: url('../../../images/header-images/header-flag.png');
+            width: 30px;
+            height: 20px;
+        }
+
+        &__down-key{
+            content: url('../../../images/header-images/arrow_drop_down.png');
+            width: 15px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width:1400px) {
+    .header{
+        padding: 25px 150px;
+
+        &__clock{
+            display: none;
+        }
+
+        &__container{
+            justify-content: end;
+            gap: 444px;
+        }
+
+        &__logo{
+            align-content: center;
+            text-align: center;
+        }
+        
+      
+    }
+}
+
+
+

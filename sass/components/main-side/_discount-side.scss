@@ -1,0 +1,172 @@
+@import "../../utils/placeholders";
+
+@media (min-width:375px) {
+    .discount-side{
+        background-color: $yellow-shade;
+        padding: 200px 20px 140px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        transform: skewY(-14deg);
+        align-items: center;
+        & > *{
+            transform: skewY(14deg);
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        &__mobile-image{
+            content: url('../../../images/main-images/percent-side-img-mobile.png');
+        }
+
+        &__desktop-image{display: none;}
+    
+        &__header-paragraph-container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 16px
+        }
+    
+        &__paragraph{
+            font-size: $mobile__hero-paragraph-font-size;
+            font-weight: $mobile__hero-paragraph-font-weight;
+            font-family: $main-font;
+            color: $yellow-shade;
+            text-transform: uppercase;
+        }
+    
+        &__header{
+            font-size: $mobile__hero-header-font-size;
+            font-weight: $mobile__hero-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+            margin-bottom: 25px;
+        }
+    
+        &__checkbox-list{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+    
+        &__checkbox-item{
+            border-radius: $mobile__checkbox-card-border-radius;
+            padding: $mobile__checkbox-card-padding;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    
+        &__check-circle{
+            content: url('../../../images/main-images/check_circle.png');
+            width: 21px;
+            height: 21px;
+        }
+    
+        &__checkbox-paragraph{
+            color: $black-shade;
+            font-family: $main-font;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    
+        &__button{
+            border-radius: $mobile__button-border-radius;
+            padding: $mobile__button-padding;
+            background-color: $black-shade;
+            border: 0px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+    
+        &__button-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &__button-paragraph{
+            color: white;
+            font-family:$main-font;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        &__button-image{
+            content: url('../../../images/main-images/right-key-white.png');
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (min-width:1400px) {
+    .discount-side{
+        padding: 0px 850px 150px 150px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -100px;
+        padding-top: 250px;
+        align-items: start;
+    
+        &__container{
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        &__mobile-image{
+            display: none;
+        }
+
+        &__header-paragraph-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+
+        &__paragraph{
+            font-size: $desktop__hero-paragraph-font-size;
+            font-weight: $desktop__hero-paragraph-font-weight;
+            font-family: $main-font;
+            column-rule: $yellow-shade;
+        }
+
+        &__header{
+            font-size: $desktop__hero-header-font-size;
+            font-weight: $desktop__hero-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+        }
+
+        &__button{
+            align-self: flex-start;
+        }
+
+        &__checkbox-list{
+            margin-bottom: 0px;
+        }
+
+        &__button-container{
+            gap: 90px;
+        }
+
+        &__desktop-image{
+            display: inline;
+            content: url('../../../images/main-images/discount-side-image-desktop.png');
+            width: 550px;
+            height: 550px;
+            margin-top: 180px;
+        }
+
+    }
+
+}

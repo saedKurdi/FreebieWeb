@@ -1,0 +1,147 @@
+@import "../../utils/placeholders";
+
+@media (min-width:375px) {
+    .footer-side{
+        background-color: $cream-shade;
+        padding: 260px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -160px;
+        // transform: skewY(-14deg);
+
+        // & > *{
+        //     transform: skewY(14deg);
+        // }
+
+        &__header{
+            font-size: $mobile__section-header-font-size;
+            font-weight: $mobile__section-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        &__header2_{display: none; }
+
+        &__button{
+            border-radius: $mobile__button-border-radius;
+            padding: $mobile__button-padding;
+            background-color: $yellow-shade;
+            border: 0px;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+        &__button-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__button-image{
+            content: url('../../../images/main-images/right-key.png');
+            width: 20px;
+            height: 20px;
+        }
+
+        &__button-paragraph{
+            color: $black-shade;
+            font-family: $main-font;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        &__copyright{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &__privacy{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+}
+
+@media (min-width:1400px) {
+    .footer-side{
+        background-color: $cream-shade;
+        padding: 400px 150px 30px 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -180px;
+       justify-content: space-between;
+       align-items: center;
+      row-gap: 20px;
+      column-gap: 150px;
+        
+        &__header{
+            display: none;
+        }
+
+        &__header2_{
+            display: inline;
+             font-size: $desktop__section-header-font-size;
+            font-weight: $desktop__section-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+            margin-bottom: 40px;
+        }
+
+        &__button{
+          cursor: pointer;
+          border-radius: $desktop__button-border-radius;
+          padding: $desktop__button-padding;
+        }
+
+        &__button-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__button-image{
+            content: url('../../../images/main-images/right-key.png');
+            width: 20px;
+            height: 20px;
+        }
+
+        &__button-paragraph{
+            color: $black-shade;
+            font-family: $main-font;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        &__copyright{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &__privacy{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+}

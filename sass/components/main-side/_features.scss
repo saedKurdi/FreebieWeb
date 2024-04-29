@@ -1,0 +1,379 @@
+@import "../../utils/placeholders";
+
+@media (min-width:375px) {
+        .our-features{
+            background-color: $black-shade;
+            padding: 100px 20px 190px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 65px;
+            transform: skewY(-14deg);
+    
+            & > *{
+                transform: skewY(14deg);
+            }
+
+            &__container{
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__big-container{
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+            }
+
+            &__paragraph{
+                font-size: $mobile__section-paragraph-font-size;
+                font-weight: $mobile__section-paragraph-font-weight;
+                font-family: $main-font;
+            }
+
+            &__header{
+                font-size: $mobile__section-header-font-size;
+                font-weight: $mobile__section-header-font-weight;
+                font-family: $main-font;
+                color: white;
+            }
+
+            &__paragraph{
+                font-size: $mobile__section-paragraph-font-size;
+                font-weight: $mobile__section-paragraph-font-weight;
+                font-family: $main-font;
+                color: $yellow-shade;
+            }
+
+            &__header{
+                font-size: $mobile__section-header-font-size;
+                font-weight: $mobile__section-header-font-weight;
+                font-family: $main-font;
+            }
+
+            &__button{
+                border-radius: $mobile__button-border-radius;
+                padding: $mobile__button-padding;
+                background-color: white;
+                border: 0px;
+                cursor: pointer;
+            }
+    
+            &__button-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+            }
+        
+            &__button-paragraph{
+                color: $black-shade;
+                font-family:$main-font;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $black-shade;
+            }
+    
+            &__button-image{
+                content: url('../../../images/main-images/right-key.png');
+                width: 20px;
+                height: 20px;
+            }
+
+            &__colorful-cards{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                list-style: none;
+            }
+
+            &__colorful-card{
+                border-radius: $mobile__colorful-card-border-radius;
+                padding: $mobile__colorful-card-padding;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .cc1{
+                background-color: white;
+            }
+
+            .cc2{
+                background-color: $yellow-shade;
+            }
+
+            .cc3{
+                background-color: white;
+            }
+
+            .cc4{
+                background-color: $yellow-shade;
+            }
+
+            .colorful-card__container{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .colorful-card__digit{
+                font-family: $main-font;
+                font-size: 72px;
+                font-weight: 700;
+                color: $black-shade;
+            }
+
+            &__colorful-card > img{
+                width: 48px;
+                height: 48px;
+            }
+
+            &__colorful-card > div  img{
+                width: 12px;
+                height: 12px;
+                margin-bottom: 17px;
+            }
+
+            .colorful-card__paragraph1{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 24px;
+                font-weight: 750;
+            }
+
+            .colorful-card__paragraph2{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: 600;
+            }
+           
+            .digit-and-dote{
+                display: flex;
+                align-items: end;
+            }
+
+            &__big-card{
+                border-radius: $mobile__big-card-border-radius;
+                padding: $mobile__big-card-padding;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                align-content: center;
+                gap: 20px;
+                margin-bottom: 150px;
+            }
+
+            &__big-card-img{
+                content: url('../../../images/main-images/greek-style.png');
+                width: 270px;
+                height: 270px;
+            }
+
+            &__big-card-header{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .big-card__header{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 30px;
+                font-weight: 700;
+                align-self: center;
+            }
+
+            .big-card__description{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 16px;
+                font-weight: 400;
+                align-self: center;
+            }
+
+            .big-card__name{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 24px;
+                font-weight: 700;
+                align-self: center;
+                margin-bottom: 50px;
+            }
+
+            .right-left-arrows{
+                display: flex;
+                gap: 45px;
+                align-self: center;
+                text-align: center;
+            }
+        }
+}
+
+@media (min-width:1400px) {
+    .our-features{
+        padding: 250px 150px 150px 150px;
+            display: flex;
+            flex-direction: column;
+
+            &__big-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 170px;
+                margin-bottom: 90px;
+            }
+
+            &__colorful-cards{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                list-style: none;
+                position: relative;
+            }
+
+            &__colorful-card{
+                border-radius: $desktop__colorful-card-border-radius;
+                padding: $desktop__colorful-card-padding;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .colorful-card__container{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                position: relative;
+            }
+
+            .cc1{
+                background-color: white;
+            }
+
+            .cc2{
+                background-color: $yellow-shade;
+            }
+
+            .cc3{
+                background-color: white;
+            }
+
+            .cc4{
+                background-color: $yellow-shade;
+            }
+
+            &__colorful-cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-self:flex-start;
+                row-gap: 50px;
+                column-gap: 50px;
+            }
+
+            .colorful-card__digit{
+                font-family: $main-font;
+                font-size: 72px;
+                font-weight: 700;
+                color: $black-shade;
+            }
+
+            &__colorful-card > img{
+                width: 48px;
+                height: 48px;
+            }
+
+            &__colorful-card > div  img{
+                width: 12px;
+                height: 12px;
+                margin-bottom: 17px;
+            }
+
+            .colorful-card__paragraph1{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 24px;
+                font-weight: 750;
+              
+            }
+
+            .colorful-card__paragraph2{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: 600;
+                
+            }
+           
+            .digit-and-dote{
+                display: flex;
+                align-items: end;
+            }
+
+            &__big-card{
+                border-radius: $desktop__big-card-border-radius;
+                padding: $desktop__big-card-padding;
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                gap: 40px;
+            }
+
+            &__big-card-img{
+                content: url('../../../images/main-images/greek-style.png');
+                width: 400px;
+                height: 400px;
+            }
+
+            &__big-card-header{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: start;
+                gap: 0px;
+            }
+
+            .big-card__header{
+                color: $main-font;
+                font-family:$main-font;
+                font-size: 50px;
+                margin-bottom: 40px;
+                font-weight: 700;
+            }
+
+            .big-card__description{
+                color: $black-shade;
+                font-family: $main-font;
+                font-size: 30px;
+                font-weight: 400;
+                align-self: flex-start;
+                justify-content: start;
+            }
+
+            .big-card__name{
+                color: $black-shade;
+                font-family: $main-font;
+                color: rgb(38, 38, 38);
+                font-size: 20px;
+                font-weight: 700;
+                align-self: flex-start;
+                justify-content: start;
+            }
+
+            .right-left-arrows{
+                display: flex;
+                gap: 45px;
+                align-self: flex-start;
+                justify-content: start;
+
+            }
+
+            
+    }
+}

@@ -1,0 +1,104 @@
+@import "./variables/other";
+@import "./variables/colors";
+
+/* Placeholders For Desktop */
+%desktop__hero-header{
+    font-size: $desktop__hero-header-font-size;
+    font-weight: $desktop__hero-header-font-weight;
+    font-family: $main-font;
+}
+
+%desktop__hero-paragraph{
+    font-size: $desktop__hero-paragraph-font-size;
+    font-weight: $desktop__hero-paragraph-font-weight;
+    font-family: $main-font;
+}
+
+%desktop__section-header{
+    font-size: $desktop__section-header-font-size;
+    font-weight: $desktop__section-header-font-weight;
+    font-family: $main-font;
+}
+
+%desktop__section-paragraph{
+    font-size: $desktop__section-paragraph-font-size;
+    font-weight: $desktop__section-paragraph-font-weight;
+    font-family: $main-font;
+}
+
+%desktop__button{
+    border-radius: $desktop__button-border-radius;
+    padding: $desktop__button-padding;
+}
+
+%desktop__questions-card{
+    border-radius: $desktop__questions-card-border-radius;
+    padding: $desktop__questions-card-padding;
+}
+
+%desktop__checkbox-card{
+    border-radius: $desktop__checkbox-card-border-radius;
+    padding: $desktop__checkbox-card-padding;
+}
+
+%desktop__colorful-card{
+    border-radius: $desktop__colorful-card-border-radius;
+    padding: $desktop__colorful-card-padding;
+}
+
+%desktop__big-card{
+    border-radius: $desktop__big-card-border-radius;
+    padding: $desktop__big-card-padding;
+}
+
+
+
+/* Placeholders For Mobile */
+%mobile__hero-header {
+    font-size: $mobile__hero-header-font-size;
+    font-weight: $mobile__hero-header-font-weight;
+    font-family: $main-font;
+}
+
+%mobile__hero-paragraph {
+    font-size: $mobile__hero-paragraph-font-size;
+    font-weight: $mobile__hero-paragraph-font-weight;
+    font-family: $main-font;
+}
+
+%mobile__section-header {
+    font-size: $mobile__section-header-font-size;
+    font-weight: $mobile__section-header-font-weight;
+    font-family: $main-font;
+}
+
+%mobile__section-paragraph {
+    font-size: $mobile__section-paragraph-font-size;
+    font-weight: $mobile__section-paragraph-font-weight;
+    font-family: $main-font;
+}
+
+%mobile__button {
+    border-radius: $mobile__button-border-radius;
+    padding: $mobile__button-padding;
+}
+
+%mobile__questions-card {
+    border-radius: $mobile__questions-card-border-radius;
+    padding: $mobile__questions-card-padding;
+}
+
+%mobile__checkbox-card {
+    border-radius: $mobile__checkbox-card-border-radius;
+    padding: $mobile__checkbox-card-padding;
+}
+
+%mobile__colorful-card {
+    border-radius: $mobile__colorful-card-border-radius;
+    padding: $mobile__colorful-card-padding;
+}
+
+%mobile__big-card {
+    border-radius: $mobile__big-card-border-radius;
+    padding: $mobile__big-card-padding;
+}

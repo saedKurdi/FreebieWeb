@@ -1,0 +1,111 @@
+@import "../../utils/placeholders";
+
+@media (min-width:375px) {
+    .about-shopping{
+        background-color: $yellow-shade;
+        padding: 25px 20px 140px 20px;
+        display: flex;
+        flex-direction: column;
+        transform: skewY(-14deg);
+
+        & > *{
+            transform: skewY(14deg);
+        }
+
+        &__image{
+            content: url('../../../images/main-images/about-shopping-logo-mobile.png');
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__header{
+            font-size: $mobile__section-header-font-size;
+            font-weight: $mobile__section-header-font-weight;
+            font-family: $main-font;
+            color: $black-shade;
+            margin-bottom: 25px;
+        }
+
+        &__paragraph1{
+            font-size: $mobile__section-paragraph-font-size;
+            font-weight: $mobile__section-paragraph-font-weight;
+            font-family: $main-font;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        &__paragraph2{
+            font-size: $mobile__section-paragraph-font-size;
+            font-weight: $mobile__section-paragraph-font-weight;
+            font-family: $main-font;
+            margin-bottom: 25px;
+        }
+
+        &__button{
+            border-radius: $mobile__button-border-radius;
+            padding: $mobile__button-padding;
+            background-color: $black-shade;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        &__button-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+    
+        &__button-paragraph{
+            color: $black-shade;
+            font-family:$main-font;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        &__button-image{
+            content: url('../../../images/main-images/right-key-white.png');
+            width: 20px;
+            height: 20px;
+        }
+
+        &__desktop-image{display: none;}
+    }
+}
+
+@media (min-width:1400px) {
+    .about-shopping{
+        padding: 250px 150px 60px 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        gap: 20px;
+
+        &__image{
+            display: none;
+        }
+
+        &__desktop-image{
+            display: inline;
+            content: url('../../../images/main-images/about-shopping-logo-mobile.png');
+            width: 714px;
+            height: 715px;
+        }
+
+        &__button{
+            align-self: flex-start;
+        }
+
+        &__button-container{
+            gap: 90px;
+        }
+
+        
+    }
+}
